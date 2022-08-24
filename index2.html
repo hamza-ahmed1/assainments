@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+        <p class="render"> First Name : Alex</p>
+        <p class="render" id=”lastName”>Last Name: Bank</p>
+        <p class="render"> Email : alexbank@example.com</p>
+        <p class="render"> Country : Pakistan </p>
+        <p class="render"> contact : +92 300 1234567</p>
+        </div>
+        </div>
+        <script>
+           var nType= document.getElementById("form-content").nodeType;
+           var nTypeOfChild= document.getElementById("last-name").nodeType;
+           var ChildN= document.getElementById("last-name").childNodes;
+           
+           var target1=document.getElementById("main-content").firstElementChild;
+           var target2=document.getElementById("main-content");
+           var x=target2.lastElementChild;
+        //    .lastElementChild;
+        var target3=document.getElementById("last-name");
+        var y=target3.nextElementSibling;
+
+        var z=target3.previousElementSibling;
+
+        var target4=document.getElementById("email");
+        var a=target4.parentNode
+            var b=target4.nodeType
+           console.log(b)
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+        <p class="render"> First Name : Alex</p>
+        <p class="render" id=”lastName”>Last Name: Bank</p>
+        <p class="render"> Email : alexbank@example.com</p>
+        <p class="render"> Country : Pakistan </p>
+        <p class="render"> contact : +92 300 1234567</p>
+        </div>
+        </div>
+        <script>
+    //  var target=document.getElementById("main-content");
+    //  var childNodes=target.childNodes[1];
+      var target1=document.querySelectorAll(".render")[0].innerHTML;
+      var target2=document.querySelectorAll(".render")[1].innerHTML;
+      var target3=document.querySelectorAll(".render")[2].innerHTML;
+      var target4=document.querySelectorAll(".render")[3].innerHTML;
+    //   var targetedText=target.innerHTML
+    //console.log(target1);
+    //console.log(target2);
+    //console.log(target3);
+    //console.log(target4);
+
+
+    //set value
+var x= document.getElementById("first-name").value="Alex";
+var x= document.getElementById("last-name").value="Bank";
+var x= document.getElementById("email").value="alexbank@example.com";
+// console.log(x);
+
+    //get value
+    //  var text=document.getElementById("first-name").value
+    //         console.log(text);
+        </script>
+</body>
+</html>
